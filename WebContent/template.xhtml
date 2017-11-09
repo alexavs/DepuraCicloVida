@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:h="http://java.sun.com/jsf/html"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  >
+	  	  
+	  <h:head>
+		<title>JSF 2.1 - Um título modificado pela página</title>		
+	  </h:head>
+	
+	<h:body>
+		<div id="topo">
+			<h:graphicImage name="logo_dataprev.png" library="imagens" />
+		</div>		
+		
+		<div id="conteudo">
+			<ui:include src="/menu.xhtml" />
+			<ui:insert name="conteudo">
+				Conteudo da pagina
+			</ui:insert>
+		</div>
+		
+		<div id="rodape">
+			<strong> Dataprev UDRJ </strong>			
+		</div>
+	</h:body>
+	  
+</html>	  
